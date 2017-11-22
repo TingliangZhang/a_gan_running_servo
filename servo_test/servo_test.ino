@@ -11,7 +11,7 @@ void setup() {
 }
 
 void loop() {
-  int delta=random(0,100);   //random num from 0 to 100\
+  int delta=random(0,100);   //random num from 0 to 100\(long int)
   float Bias=delta/100;
   
 
