@@ -11,6 +11,13 @@ void setup() {
 }
 
 void loop() {
+  int delta=random(0,100);   //random num from 0 to 100\
+  float Bias=delta/100;
+  
+
+
+
+  
   for (pos = 30; pos <= 150; pos += 5) { // goes from 0 degrees to 180 degrees
     // in steps of 1 degree
     myservo.write(pos);              // tell servo to go to position in variable 'pos'
