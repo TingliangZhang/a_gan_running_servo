@@ -39,20 +39,20 @@ int main(void) {
 		/* 180 degrees on servo 2 */
 		TM_SERVO_SetDegrees(&Servo2, 180);
 		/* 2s delay */
-		Delayms(200);
+		Delayms(2000);
 		
 		/* 90 degrees rotation */
 		TM_SERVO_SetDegrees(&Servo1, 90);
 		/* 90 degrees on servo 2 */
 		TM_SERVO_SetDegrees(&Servo2, 90);
 		/* 2s delay */
-		Delayms(200);
+		Delayms(2000);
 		
 		/* 180 degrees rotation */
 		TM_SERVO_SetDegrees(&Servo1, 180);
 		/* 0 degrees on servo 2 */
 		TM_SERVO_SetDegrees(&Servo2, 0);
 		/* 2s delay */
-		Delayms(200);
+		Delayms(2000);
 	}
 }
