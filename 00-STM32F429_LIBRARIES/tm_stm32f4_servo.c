@@ -20,9 +20,12 @@
 
 TM_SERVO_Result_t TM_SERVO_Init(TM_SERVO_t* ServoStruct, TIM_TypeDef* TIMx, TM_PWM_Channel_t PWMChannel, TM_PWM_PinsPack_t Pinspack) {
 	/* Initialize timer with 50Hz frequency for PWM */
+	
+	
 	//张庭梁改为49.97Hz   对应&ServoStruct->PWM, 156.2
 	//SERVO_MICROS_MIN	320
 	//SERVO_MICROS_MAX	640
+	
 	
 	if (TM_PWM_InitTimer(TIMx, &ServoStruct->PWM, 156.2) != TM_PWM_Result_Ok) {
 		/* Return error */
