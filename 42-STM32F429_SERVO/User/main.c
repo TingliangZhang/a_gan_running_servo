@@ -42,7 +42,7 @@ int main(void) {
 	
 	
 	/* Initialize servo 4, TIM4, Channel 2, Pinspack 1 = PD13 */
-	TM_SERVO_Init(&Servo4, TIM4, TM_PWM_Channel_2, TM_PWM_PinsPack_2);
+	TM_SERVO_Init(&Servo4, TIM4, TM_PWM_Channel_2, TM_PWM_PinsPack_2); 
 		
 	/* Initialize servo 5, TIM4, Channel 3, Pinspack 1 = PB0 */
 	TM_SERVO_Init(&Servo5, TIM3, TM_PWM_Channel_3, TM_PWM_PinsPack_1);
@@ -60,11 +60,11 @@ int main(void) {
 		
 		
 		
-	/* Initialize servo 9, TIM1, Channel 1, Pinspack 2 = PD12 */
-	TM_SERVO_Init(&Servo9, TIM4, TM_PWM_Channel_1, TM_PWM_PinsPack_1);
+	/* Initialize servo 9, TIM8, Channel 1, Pinspack 1 = PF7 */
+	TM_SERVO_Init(&Servo9, TIM11, TM_PWM_Channel_1, TM_PWM_PinsPack_2);
 		
-	/* Initialize servo 10, TIM1, Channel 2, Pinspack 2 = PD15 */
-	TM_SERVO_Init(&Servo10, TIM4, TM_PWM_Channel_4, TM_PWM_PinsPack_1);
+	/* Initialize servo 10, TIM8, Channel 2, Pinspack 1 = PF8 */
+	TM_SERVO_Init(&Servo10, TIM13, TM_PWM_Channel_1, TM_PWM_PinsPack_2);
 		
 		
 		
@@ -87,16 +87,16 @@ int main(void) {
 	TM_SERVO_Init(&Servo16, TIM4, TM_PWM_Channel_4, TM_PWM_PinsPack_1);
 		
 	/* Initialize servo 17, TIM8, Channel 1, Pinspack 1 = PF7 */
-	TM_SERVO_Init(&Servo17, TIM11, TM_PWM_Channel_1, TM_PWM_PinsPack_2);
+	//TM_SERVO_Init(&Servo17, TIM11, TM_PWM_Channel_1, TM_PWM_PinsPack_2);
 		
 	/* Initialize servo 18, TIM8, Channel 2, Pinspack 1 = PF8 */
-	TM_SERVO_Init(&Servo18, TIM13, TM_PWM_Channel_1, TM_PWM_PinsPack_2);
+	//TM_SERVO_Init(&Servo18, TIM13, TM_PWM_Channel_1, TM_PWM_PinsPack_2);
 		
 	/* Initialize servo 19, TIM8, Channel 3, Pinspack 1 = PF9 */
-	TM_SERVO_Init(&Servo19, TIM14, TM_PWM_Channel_1, TM_PWM_PinsPack_2);
+	//TM_SERVO_Init(&Servo19, TIM14, TM_PWM_Channel_1, TM_PWM_PinsPack_2);
 		
 	/* Initialize servo 20, TIM8, Channel 4, Pinspack 1 = PC9 */
-	TM_SERVO_Init(&Servo20, TIM8, TM_PWM_Channel_4, TM_PWM_PinsPack_1);
+	//TM_SERVO_Init(&Servo20, TIM8, TM_PWM_Channel_4, TM_PWM_PinsPack_1);
 
 	
 	
@@ -137,14 +137,14 @@ int main(void) {
 		TM_SERVO_SetDegrees(&Servo15, 0);
 				
 		TM_SERVO_SetDegrees(&Servo16, 0);
-				
-		TM_SERVO_SetDegrees(&Servo17, 0);
-			
-		TM_SERVO_SetDegrees(&Servo18, 0);
-				
-		TM_SERVO_SetDegrees(&Servo19, 0);
-				
-		TM_SERVO_SetDegrees(&Servo20, 0);
+//				
+//		TM_SERVO_SetDegrees(&Servo17, 0);
+//			
+//		TM_SERVO_SetDegrees(&Servo18, 0);
+//				
+//		TM_SERVO_SetDegrees(&Servo19, 0);
+//				
+//		TM_SERVO_SetDegrees(&Servo20, 0);
 		
 		
 		
