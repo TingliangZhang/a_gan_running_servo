@@ -17,9 +17,17 @@
 #include "tm_stm32f4_delay.h"
 #include "tm_stm32f4_servo.h"
 
+	/* Servo structs */
+	TM_SERVO_t Servo1, Servo2, Servo3, Servo4, Servo5, Servo6, Servo7, Servo8, Servo9, Servo10, Servo11, Servo12, Servo13, Servo14, Servo15;
+	
+
+
+void zero(float d);
+
+
 int main(void) {
 	/* Servo structs */
-	TM_SERVO_t Servo1, Servo2, Servo3, Servo4, Servo5, Servo6, Servo7, Servo8, Servo9, Servo10, Servo11, Servo12, Servo13, Servo14, Servo15, Servo16, Servo17, Servo18, Servo19, Servo20;
+	//TM_SERVO_t Servo1, Servo2, Servo3, Servo4, Servo5, Servo6, Servo7, Servo8, Servo9, Servo10, Servo11, Servo12, Servo13, Servo14, Servo15;
 	
 	/* Initialize system */
 	SystemInit();
@@ -84,7 +92,7 @@ int main(void) {
 	TM_SERVO_Init(&Servo15, TIM4, TM_PWM_Channel_3, TM_PWM_PinsPack_1);
 		
 	/* Initialize servo 16, TIM4, Channel 4, Pinspack 1 = PB9 */
-	TM_SERVO_Init(&Servo16, TIM4, TM_PWM_Channel_4, TM_PWM_PinsPack_1);
+	//TM_SERVO_Init(&Servo16, TIM4, TM_PWM_Channel_4, TM_PWM_PinsPack_1);
 		
 	/* Initialize servo 17, TIM8, Channel 1, Pinspack 1 = PF7 */
 	//TM_SERVO_Init(&Servo17, TIM11, TM_PWM_Channel_1, TM_PWM_PinsPack_2);
@@ -101,42 +109,56 @@ int main(void) {
 	
 	
 
-		/* 0 degrees rotation on servo 1 */
-		TM_SERVO_SetDegrees(&Servo1, 0);
+		
+				
 	
 	while (1) {
-		/* 0 degrees rotation on servo 1 */
-		TM_SERVO_SetDegrees(&Servo1, 0);	
+
+		zero(0);
+		Delayms(4000);
 		
-		TM_SERVO_SetDegrees(&Servo2, 0);
+		zero(180);
+		Delayms(4000);
+	
+		/* 2s delay */
+		//Delayms(200);
+	}
+}
+
+void zero(float d)
+{
+			/* 0 degrees rotation on servo 1 */
+		TM_SERVO_SetDegrees(&Servo1, d);	
 		
-		TM_SERVO_SetDegrees(&Servo3, 0);
+		TM_SERVO_SetDegrees(&Servo2, d);
 		
-		TM_SERVO_SetDegrees(&Servo4, 0);
+		TM_SERVO_SetDegrees(&Servo3, d);
 		
-		TM_SERVO_SetDegrees(&Servo5, 0);
+		TM_SERVO_SetDegrees(&Servo4, d);
 		
-		TM_SERVO_SetDegrees(&Servo6, 0);
+		TM_SERVO_SetDegrees(&Servo5, d);
 		
-		TM_SERVO_SetDegrees(&Servo7, 0);
+		TM_SERVO_SetDegrees(&Servo6, d);
 		
-		TM_SERVO_SetDegrees(&Servo8, 0);
+		TM_SERVO_SetDegrees(&Servo7, d);
 		
-		TM_SERVO_SetDegrees(&Servo9, 0);
+		TM_SERVO_SetDegrees(&Servo8, d);
+		
+		TM_SERVO_SetDegrees(&Servo9, d);
 				
-		TM_SERVO_SetDegrees(&Servo10, 0);
+		TM_SERVO_SetDegrees(&Servo10, d);
 				
-		TM_SERVO_SetDegrees(&Servo11, 0);
+		TM_SERVO_SetDegrees(&Servo11, d);
 				
-		TM_SERVO_SetDegrees(&Servo12, 0);
+		TM_SERVO_SetDegrees(&Servo12, d);
 				
-		TM_SERVO_SetDegrees(&Servo13, 0);
+		TM_SERVO_SetDegrees(&Servo13, d);
 				
-		TM_SERVO_SetDegrees(&Servo14, 0);
+		TM_SERVO_SetDegrees(&Servo14, d);
 		
-		TM_SERVO_SetDegrees(&Servo15, 0);
+		TM_SERVO_SetDegrees(&Servo15, d);
 				
-		TM_SERVO_SetDegrees(&Servo16, 0);
+//	  TM_SERVO_SetDegrees(&Servo16, 0);
 //				
 //		TM_SERVO_SetDegrees(&Servo17, 0);
 //			
@@ -146,11 +168,5 @@ int main(void) {
 //				
 //		TM_SERVO_SetDegrees(&Servo20, 0);
 		
-		
-		
-		
-	
-		/* 2s delay */
-		//Delayms(200);
-	}
 }
+
