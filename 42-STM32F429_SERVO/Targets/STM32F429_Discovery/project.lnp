@@ -10,6 +10,7 @@
 ".\targets\stm32f429_discovery\tm_stm32f4_servo.o"
 ".\targets\stm32f429_discovery\tm_stm32f4_pwm.o"
 ".\targets\stm32f429_discovery\tm_stm32f4_gpio.o"
+".\targets\stm32f429_discovery\tm_stm32f4_rng.o"
 ".\targets\stm32f429_discovery\main.o"
 ".\targets\stm32f429_discovery\stm32f4xx_it.o"
 ".\targets\stm32f429_discovery\system_stm32f4xx.o"
