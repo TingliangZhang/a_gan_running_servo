@@ -17,15 +17,15 @@ void loop() {
 
 
   
-  for (pos = 30; pos <= 150; pos += 5) { // goes from 0 degrees to 180 degrees
+  for (pos = 40; pos <= 140; pos += 5) { // goes from 0 degrees to 180 degrees
     // in steps of 1 degree
     myservo.write(pos);              // tell servo to go to position in variable 'pos'
-    delay(14);                       // waits 15ms for the servo to reach the position
+    delay(1);                       // waits 15ms for the servo to reach the position
 
   }
-  for (pos = 150; pos >= 30; pos -= 5) { // goes from 180 degrees to 0 degrees
+  for (pos = 140; pos >= 40; pos -= 5) { // goes from 180 degrees to 0 degrees
     myservo.write(pos);              // tell servo to go to position in variable 'pos'
-    delay(15);                       // waits 15ms for the servo to reach the position
+    delay(10);                       // waits 15ms for the servo to reach the position
   }
 }
 
